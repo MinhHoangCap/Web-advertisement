@@ -1,0 +1,414 @@
+:root{
+    --header-range: 1600px;
+    --page-range: 1140px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    
+    z-index: 999;
+}
+.logo__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header__wrapper{
+    display: flex;
+    width: var(--header-range);
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.navigation__wrapper{
+    
+    display: flex;
+}
+.navigation__list{
+    display: flex;
+    list-style-type: none;
+    
+}
+.navigation__item{
+    padding: 15px 20px;
+    margin: 0 5px;
+    
+    cursor: pointer;
+}
+.navigation__item a{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: wheat;
+}
+.navigation__item a:hover{
+    color: white;
+}
+
+
+/* Content */
+.content__banner{
+    /* background-color: #0E0868; */
+    padding: 100px 0;
+    
+}
+.banner__img{
+    width: 400px;
+    height: 400px;
+}
+.content__banner:hover .banner__img{
+    width: 420px;
+    height: 420px;
+    animation: content__img-effect 0.5s;
+}
+
+@keyframes content__img-effect{
+    from{
+        width: 400px;
+        height: 400px;
+    }
+    to{
+        width: 420px;
+        height: 420px;
+    }
+}
+.banner__wrapper{
+    width: var(--page-range);
+    margin: 0 auto;
+    padding: 20px;
+}
+.banner__header{
+    font-size: 46px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(319deg, rgba(255,188,188,1) 0%, rgba(207,109,240,1) 29%, rgba(244,68,215,1) 70%, rgba(66,58,252,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner__infomation {
+    padding: 40px;
+}
+
+.banner__button{
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px 15px;
+}
+.banner__button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.img__temp{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=');
+
+    /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.content__solution{
+    width: var(--page-range);
+    margin: 0 auto;
+}
+.solution__heading{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.solution__content{
+    line-height: 1.5rem;
+    font-size: 15px;
+    text-align: center;
+}
+.solution__content--company-name{
+    font-weight: bold;
+}
+
+/* Service */
+.types-of-services{
+    width: var(--page-range);
+    margin: 0 auto;
+}
+.grid-container{
+    display: grid;
+    gap: 30px;
+}
+.service{
+    
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+.service__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.service__img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+
+    
+    
+}
+.service__heading{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.service__content{
+    display: none;
+    text-align: justify;
+}
+/* .service:hover .service__content{
+    display: block;
+} */
+.service:hover .service__img{
+    animation: service-img-effect 0.5s;
+    width: 70%;
+}
+
+
+
+@keyframes service-img-effect{
+    from{
+        width: 60%;
+
+    }
+    to{
+        width: 70%;
+    }
+}
+.view-details-btn{
+    border: none;
+    width: 50%;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    margin: 20px auto 20px auto ;
+}
+.view-details-btn:hover{
+    background-color: rgb(89, 89, 253);
+    color: yellow;
+}
+
+
+
+
+
+/* Advise */
+
+.advise__wrapper{
+    padding: 20px;
+
+    text-align: center;
+
+    background-color:rgba(255, 81, 1, 0.5) ;
+    
+    display: flex;
+    flex-direction: column;
+}
+.advise__header{
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+.advise-form input{
+    margin: 5px 10px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+
+
+.reasons{
+    width: var(--page-range);
+    margin: 0 auto;
+}
+.reasons__heading{
+    font-size: 30px;
+    color: #0E0868;
+    font-weight: bolder;
+    width: 80%;
+}
+.reasons__company-name{
+    color: yellow;
+}
+
+.reason__heading{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.reason__content{
+    text-align: justify;
+}
+.move-right{
+    animation:  move-right-animate 0.5s ease-in-out;
+}
+.move-left{
+    animation:  move-left-animate 0.5s ease-in-out;
+}
+.reason__img.animate{
+    animation-play-state: running;
+}
+@keyframes move-right-animate{
+    from{
+        opacity: 0;
+        transform:  translateX(-25%);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes move-left-animate{
+    from{
+        opacity: 0;
+        transform:  translateX(25%);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+
+}
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  
+.feedback__header{
+
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+.customer{
+    display: flex;
+}
+.customer__img img{
+    width: 70p;
+    height: 70px;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+.customer__img{
+    margin: 5px 5px;
+}
+
+
+
+/* News */
+.news{
+    padding: 100px 10px;
+}
+.news__heading{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/* Footer */
+.footer{
+    width: var(--page-range);
+    font-weight: bold;
+    margin: 0 auto;
+}
+.footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+.footer li{
+    display: flex;
+}
+.footer__heading{
+    text-transform: uppercase;
+    
+    font-size: 1.1rem;
+}
+
+.about-us__content{
+    text-align: justify;
+}
+
+
+
+
+.footer__text{
+    text-align: center;
+}
+
+
+/* Contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+
+
+
+
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+
+    font-size: 30px;
+}
+
+.contact__messenger i{
+    color: rgb(2, 154, 214);
+}
+.contact__messenger i:hover{
+    font-size: 35px;
+}
+.contact__call i{
+    color: rgb(2, 158, 2);
+}
+.contact__call i:hover{
+    font-size: 35px ;
+}
