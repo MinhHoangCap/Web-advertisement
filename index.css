@@ -181,6 +181,7 @@
     border-radius: 10px;
 
 }
+
 .image{
     display: block;
 
@@ -201,8 +202,10 @@
 }
 .content{
     display: none;
-    
+    /* transition: display 0.25s linear;
+    animation: fadeIn 1s;  */
 }
+
 .service__content{
     display: flex;
     text-align: center;
@@ -214,10 +217,7 @@
 }
 .service:hover .content{
     display: flex;
-    flex-direction: column;
-    animation: fadeIn 1s; 
-    transition-delay: 0.2s; 
-    
+    flex-direction: column; 
 }
 
 @keyframes fadeIn {
@@ -411,7 +411,8 @@
 
 /* Footer */
 .footer{
-    width: var(--page-range);
+    max-width: var(--page-range);
+    width: 100%;
     font-weight: bold;
     margin: 0 auto;
 }

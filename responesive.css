@@ -1,4 +1,7 @@
 @media screen and (max-width: 576px){
+    header{
+        display: none;
+    }
     .advise-form{
         display: flex;
         flex-direction: column;
