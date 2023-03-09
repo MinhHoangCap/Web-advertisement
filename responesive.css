@@ -1,0 +1,13 @@
+@media screen and (max-width: 576px){
+    .advise-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .advise-form input{
+        width: 100%;
+    }
+    .advise__btn{
+        margin-left: 10px;
+        width: calc(100vw - 40px);
+    }
+}

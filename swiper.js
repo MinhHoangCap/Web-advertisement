@@ -1,22 +1,35 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
+    pagination:{
+        clickable:true,
 
+    },
+    spaceBetween:10,
+    slidesPerView:1,
+    speed:2000,
+    autoplay: {
+        delay: 2000,
+      },
     // If we need pagination
     pagination: {
-    el: '.swiper-pagination',
+        clickable:true,
     },
 
-    // Navigation arrows
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    breakpoints:{
+        640:{
+            slidesPerView:2,
+            spaceBetween:20
+        },
+        1024:{
+            slidesPerView:3,
+            spaceBetween:50,
+        }
+
     },
 
     // And if we need scrollbar
-    scrollbar: {
-    el: '.swiper-scrollbar',
-    },
+    
 });
