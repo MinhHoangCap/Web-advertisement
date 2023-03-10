@@ -15,7 +15,6 @@
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
-    height: 50px;
     
     z-index: 999;
 }
@@ -126,7 +125,6 @@
 
 .img__temp{
     width: 100vw;
-    height: 100vh;
     background-image: url('https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=');
 
     /* Set a specific height */
@@ -356,12 +354,20 @@
 .feedback{
     display: flex;
     flex-direction: column;
+    
 
+}
+.feedback__element{
+    border: blue 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.feedback__star i{
+    color: yellow;
 }
 .swiper {
     width: 100%;
     max-width: 1200px;
-    height: 300px;
     /* position: relative; */
 
 }
@@ -395,7 +401,7 @@
 
 /* News */
 .news{
-    padding: 100px 10px;
+    margin: 50px 0;
 }
 .news__heading{
     text-align: center;
@@ -406,7 +412,27 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.news__element{
+    padding: 10px;
+    text-align: center;
+}
+.news__img img{
+    width: 100%;
+}
+.news__button{
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
 
+}
+.news__button:hover{
+    color: red;
+    
+
+}
 
 
 /* Footer */
@@ -415,6 +441,7 @@
     width: 100%;
     font-weight: bold;
     margin: 0 auto;
+    font-size: 1.15rem;
 }
 .footer ul{
     list-style-type: none;
@@ -426,7 +453,7 @@
 .footer__heading{
     text-transform: uppercase;
     
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .about-us__content{
@@ -467,4 +494,21 @@
 }
 .contact__call i:hover{
     font-size: 35px ;
+}
+
+.social__item a{
+    color: #9088b3;
+}
+
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-twitter:hover{
+    color: skyblue;
+}
+.fa-linkedin-in:hover{
+    color: blue;
+}
+.fa-youtube:hover{
+    color: red;
 }
