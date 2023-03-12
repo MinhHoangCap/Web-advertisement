@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
+        title Document
+    body 
+        header.header
+            .logo 
+                img(src="", alt="Logo img")
+            .navigation__account
+                .navigation
+                    ul.navigation__list 
+                        li.navigation__item 
+                            a(href="") About Us
+                        li.navigation__item 
+                            a(href="") Solution
+                        li.navigation__item 
+                            a(href="") Our Works 
+                        li.navigation__item 
+                            a(href="") People
+                        li.navigation__item 
+                            a(href="") Contact
+                .account 
+                    ul.account__list 
+                        li.account__item 
+                            a(href="")  Login
+                        li.account__item 
+                            a(href="")  Regist
+        .about-us 
+            swiper-container.mySwiper(style='--swiper-navigation-color: #fff; --swiper-pagination-color: #fff' speed='600' parallax='true' pagination='true' pagination-clickable='true' navigation='true')
+                .parallax-bg(slot='container-start' style='background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);' data-swiper-parallax='-23%')
+                    mixin swiperElement(title,subtitle,text)
+                        swiper-slide
+                            .title(data-swiper-parallax='-300')= title
+                            .subtitle(data-swiper-parallax='-200')= subtitle
+                            .text(data-swiper-parallax='-100')
+                            p= text 
+                    +swiperElement('Slide 1','Subtitle','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.')
+                    +swiperElement('Slide 1','Subtitle','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.')
+                    +swiperElement('Slide 1','Subtitle','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.')
+                        
+                    
+        .solutions 
+            mixin solution(heading, element1, element2, element3, element4)
+                .solution 
+                    .solution__wrapper 
+                        .solution__heading= heading
+                        .solutions__group 
+                            p= element1
+                            p= element2
+                            p= element3
+                            p= element4
+            
+            +solution('01.Strategy & Creative','Digital Maketing strategy','Brand Positioning','Creative Development')
+            +solution("02.SNS","Social Content","Social Media","Social Listening & Insights")
+            +solution("03.Web & app","Website & Mobile Application","UI/UX Development")
+            +solution("04.Digital activation","Creative Strategy","Digital Campaign","KOL/Buzzers")
+            +solution("05.Data Marketing","Data Management Platform","System Integration","Data Analysis", "Costumer Data Visualization")
+        .ourWorks 
+            swiper-container.mySwiper(pagination='true' pagination-clickable='true' space-between='30' slides-per-view='3')
+                swiper-slide Slide 1
+                swiper-slide Slide 1
+                swiper-slide Slide 1
+
+             
+        script (src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js")
+                    
