@@ -1,629 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./responesive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    
     <header class="header">
-        <div class="header__wrapper">
-            
-            <div class="navigation__wrapper">
-    
-                <div class="header__logo">
-                    <img class="logo__img" src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-1/284446650_107536798638113_4931383333492016458_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=c6021c&_nc_ohc=lXysko0UUKMAX9LBc83&_nc_ht=scontent.fdad1-4.fna&oh=00_AfAzG11Ncy5BWhWn3SR457Fm38GvaGUQMUUlPGYiIIV33g&oe=640C336E" alt="Logo image">
-                </div>
+        <div class="header__container">
+            <div class="header__logo"> <img src="https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr" alt="Logo img"></div>
+            <div class="header__nav">
                 <div class="navigation">
-                    
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#banner">Trang chủ</a></li>
-                        <li class="navigation__item"><a href="#solution">Dịch vụ website</a> </li>
-                        <li class="navigation__item"><a href="#news">Tin tức</a></li>
-                        <li class="navigation__item"> <a href="#advise">Liên hệ</a></li>
+                        <li class="navigation__item"> <a href="#about-us">About Us</a></li>
+                        <li class="navigation__item"> <a href="#solutions">Solution</a></li>
+                        <li class="navigation__item"> <a href="#ourworks">Our Works </a></li>
+                        <li class="navigation__item"> <a href="#members">Members</a></li>
+                        <li class="navigation__item"> <a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            
         </div>
     </header>
-    
-    <div id="content">
-        <section id="banner" class="content__banner">
-            <div class="banner__wrapper row">
-                <div class="banner__infomation col-sm-12 col-md-6 ">
-                    <p class="banner__header">DIGITAL MARKETING AGENCY</p>
-                    <div class="banner__content">
-                        Đồng hành cùng doanh nghiệp mang ý tưởng đến hàng triệu khách hàng tiềm năng trên thế giới. Với mục tiêu giúp bạn tăng trưởng tối đa với các giải pháp Marketing Online chuyên biệt.
-                    </div>
-                    <div class="banner__buttons">
-                        <button class="banner__button">Dịch vụ của chúng tôi</button>
-                        <button class="banner__button">Liên hê</button>
+    <div class="about-us" id="about-us">
+        <swiper-container class="mySwiper" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" speed="1500" parallax="true" autoplay="true" delay="2000" loop="true">
+            <div class="parallax-bg" slot="container-start" data-swiper-parallax="-23%"></div>
+            <swiper-slide>
+                <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="title" data-swiper-parallax="-300">Slide 4</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="title" data-swiper-parallax="-300">Slide 5</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+    <div class="solutions" id="solutions">
+        <div class="solutions__tittle">
+            <div class="solutions__heading">Solution</div>
+            <div class="solutions__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="solution__list">
+            <div class="solution">
+                <div class="solution__wrapper">
+                    <p class="solution__number">01.</p>
+                    <div class="solution__heading"> Strategy &amp; Creative</div>
+                    <div class="solution__group">
+                        <p>Digital Maketing strategy</p>
+                        <p>Brand Positioning</p>
+                        <p>Creative Development</p>
                     </div>
                 </div>
-                <div class="banner__img-wrapper col-sm-12 col-md-6">
-                    <img class="banner__img"  src="./img/banner.png" alt="">
+            </div>
+            <div class="solution">
+                <div class="solution__wrapper">
+                    <p class="solution__number">02.</p>
+                    <div class="solution__heading"> SNS</div>
+                    <div class="solution__group">
+                        <p>Social Content</p>
+                        <p>Social Media</p>
+                        <p>Social Listening &amp; Insights</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div class="img__temp">
-            
-        </div>
-        <div id="solution" class="content__solution">
-            <div class="solution__heading">
-                DIGITAL MARKETING - GIẢI PHÁP CHO MỌI DOANH NGHIỆP
+            <div class="solution">
+                <div class="solution__wrapper">
+                    <p class="solution__number">03.</p>
+                    <div class="solution__heading"> Web &amp; app</div>
+                    <div class="solution__group">
+                        <p>Website &amp; Mobile Application</p>
+                        <p>UI/UX Development</p>
+                    </div>
+                </div>
             </div>
-            <div class="solution__content">
-                <span class="solution__content--company-name">FC Media – Công ty Cổ phần truyền thông Digital Marketing</span> uy tín tại TPHCM. Với hơn 6 năm kinh nghiệm, chúng tôi cung cấp đến bạn các dịch vụ SEO, Google Adwords, Facebook Ads, Zalo Ads, thiết kế Website chuyên nghiệp, uy tín, chất lượng. FC Media sẵn sàng đồng hành cùng bạn trong suốt chặng đường dài.
+            <div class="solution">
+                <div class="solution__wrapper">
+                    <p class="solution__number">04.</p>
+                    <div class="solution__heading"> Digital activation</div>
+                    <div class="solution__group">
+                        <p>Creative Strategy</p>
+                        <p>Digital Campaign</p>
+                        <p>KOL/Buzzers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="solution">
+                <div class="solution__wrapper">
+                    <p class="solution__number">05.</p>
+                    <div class="solution__heading"> Data Marketing</div>
+                    <div class="solution__group">
+                        <p>Data Management Platform</p>
+                        <p>System Integration</p>
+                        <p>Data Analysis</p>
+                        <p>Costumer Data Visualization</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class=" container types-of-services grid-container">
+    </div>
+    <div class="ourWorks" id="ourworks">
+        <div class="ourWorks__heading">Our Works</div>
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" loop="true" space-between="0" slides-per-view="3" speed="1500" autoplay="true" delay="2000">
+            <swiper-slide>
+                <div class="product"><img class="product__img" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&amp;w=1000&amp;q=80" alt="Product Image">
+                    <p class="product__name">Tên sản phẩm</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="product"><img class="product__img" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&amp;w=1000&amp;q=80" alt="Product Image">
+                    <p class="product__name">Tên sản phẩm</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="product"><img class="product__img" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&amp;w=1000&amp;q=80" alt="Product Image">
+                    <p class="product__name">Tên sản phẩm</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="product"><img class="product__img" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&amp;w=1000&amp;q=80" alt="Product Image">
+                    <p class="product__name">Tên sản phẩm</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="product"><img class="product__img" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&amp;w=1000&amp;q=80" alt="Product Image">
+                    <p class="product__name">Tên sản phẩm</p>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+    <div class="members" id="members">
+        <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <div class="service">
-                        
-                        <div class="image">
-
-                            <img src="./img/icon_service.png" class="service__img" alt="service image">
-                            <div class="service__heading">Quảng cáo Facebook</div>
-                        </div>
-                        <div class="content">
-                            <div class="service__content">
-                                Xây dựng thương hiệu và mang sản phẩm đến hàng triệu khách hàng tiềm năng trên mạng xã hội lớn nhất thế giới bằng các chiến lược đặc biệt và duy nhất
-                            </div>
-                            <button class="view-details-btn">
-                                Xem chi tiết
-                            </button>
-
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                
-
-            </div>
-            
-        </div>
-        <div class="reasons">
-            <div class="reasons__heading">
-                LÝ DO CÁC ĐỐI TÁC LỰA CHỌN GIẢI PHÁP DIGITAL MARKETING TẠI <span class="reasons__company-name">PH Electronic</span>
-            </div>
-            <div class="reason__content">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 move-right">
-                        <img src="./img/reason.png" alt="" class="reason__img">
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="reason move-left">
-                            <div class="reason__heading">
-                                Chiến lược Marketing có cơ sở
-                            </div>
-                            <div class="reason__content">
-                                FC Media hoạt động với chiến lược Marketing có cơ sở. Sau khi tiếp nhận thông tin khách hàng sẽ tiến hành nghiên cứu tư duy và đồng thời tìm kiếm nhu cầu thông tin của khách hàng mục tiêu. Sau đó chúng tôi tiến hành thử nghiệm, phân tích kết quả & mở rộng quy mô các chiến dịch/phương pháp Digital để mang lại ROI tích cực cho bạn.
-                            </div>
+                <div class="col col-sm-12 col-md-12 col-lg-4">
+                    <div class="members__title">
+                        <div class="container">
+                            <h3>Key Member</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    
-                    <div class="col-sm-12 col-md-6 move-right">
-                        <div class="reason">
-                            <div class="reason__heading">
-                                Chiến lược Marketing có cơ sở
-                            </div>
-                            <div class="reason__content">
-                                FC Media hoạt động với chiến lược Marketing có cơ sở. Sau khi tiếp nhận thông tin khách hàng sẽ tiến hành nghiên cứu tư duy và đồng thời tìm kiếm nhu cầu thông tin của khách hàng mục tiêu. Sau đó chúng tôi tiến hành thử nghiệm, phân tích kết quả & mở rộng quy mô các chiến dịch/phương pháp Digital để mang lại ROI tích cực cho bạn.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 move-left">
-                        <img src="./img/reason.png" alt="" class="reason__img">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 move-right">
-                        <img src="./img/reason.png" alt="" class="reason__img">
-                    </div>
-                    <div class="col-sm-12 col-md-6 move-left">
-                        <div class="reason">
-                            <div class="reason__heading">
-                                Chiến lược Marketing có cơ sở
-                            </div>
-                            <div class="reason__content">
-                                FC Media hoạt động với chiến lược Marketing có cơ sở. Sau khi tiếp nhận thông tin khách hàng sẽ tiến hành nghiên cứu tư duy và đồng thời tìm kiếm nhu cầu thông tin của khách hàng mục tiêu. Sau đó chúng tôi tiến hành thử nghiệm, phân tích kết quả & mở rộng quy mô các chiến dịch/phương pháp Digital để mang lại ROI tích cực cho bạn.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    
-                    <div class="col-sm-12 col-md-6 move-right">
-                        <div class="reason">
-                            <div class="reason__heading">
-                                Chiến lược Marketing có cơ sở
-                            </div>
-                            <div class="reason__content">
-                                FC Media hoạt động với chiến lược Marketing có cơ sở. Sau khi tiếp nhận thông tin khách hàng sẽ tiến hành nghiên cứu tư duy và đồng thời tìm kiếm nhu cầu thông tin của khách hàng mục tiêu. Sau đó chúng tôi tiến hành thử nghiệm, phân tích kết quả & mở rộng quy mô các chiến dịch/phương pháp Digital để mang lại ROI tích cực cho bạn.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 move-left">
-                        <img src="./img/reason.png" alt="" class="reason__img">
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-      
-        
-        <div class="feedback">
-            <div class="feedback__header">Khach hang noi ve <span class="company-name">Company name</span></div>
-            <div class="swiper"  >
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="feedback__element">
-                            <div class="feedback__star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="customer">
-        
-                                <div class="customer__img">
-                                    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-Wibu-Kobayashis-Dragon.jpg" alt="Customer art">
-                                </div>
-                                <div class="customer__infomation">
-
-                                    <div class="customer__name">Customer name 3</div>
-                                    <div class="customer-representative">Customer Represetative</div>
-                                </div>
-                            </div>
-                            
-                            <div class="feedback__content">
-                                Sử dụng quảng cáo Facebook đã giúp tôi tăng doanh số bán hàng trực tuyến đáng kể với chi phí hợp lý. Tôi rất hài lòng với tính năng định tuyến quảng cáo của Facebook, giúp đưa quảng cáo đến khách hàng tiềm năng của tôi.
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-    
-    
-                    <div class="swiper-pagination"></div>
-    
-                    
-                  
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
-        
-         <div id="news" class="news">
-            <div class="news__heading">Tin tuc</div>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="news__element">
-                            <div class="news__img"><img src="https://media.istockphoto.com/id/1182477852/photo/breaking-news-world-news-with-map-backgorund.jpg?s=612x612&w=0&k=20&c=SQfmzF39HZJ_AqFGosVGKT9iGOdtS7ddhfj0EUl0Tkc=" alt=""></div>
-                            <div class="news__heading">News heading</div>
-                            <div class="news__description">Description Description Description Description Description Description Description Description</div>
-                            <button href="#" class="news__button">Doc them</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news__element">
-                            <div class="news__img"><img src="https://media.istockphoto.com/id/1182477852/photo/breaking-news-world-news-with-map-backgorund.jpg?s=612x612&w=0&k=20&c=SQfmzF39HZJ_AqFGosVGKT9iGOdtS7ddhfj0EUl0Tkc=" alt=""></div>
-                            <div class="news__heading">News heading</div>
-                            <div class="news__description">Description Description Description Description Description Description Description Description</div>
-                            <button href="#" class="news__button">Doc them</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news__element">
-                            <div class="news__img"><img src="https://media.istockphoto.com/id/1182477852/photo/breaking-news-world-news-with-map-backgorund.jpg?s=612x612&w=0&k=20&c=SQfmzF39HZJ_AqFGosVGKT9iGOdtS7ddhfj0EUl0Tkc=" alt=""></div>
-                            <div class="news__heading">News heading</div>
-                            <div class="news__description">Description Description Description Description Description Description Description Description</div>
-                            <button href="#" class="news__button">Doc them</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news__element">
-                            <div class="news__img"><img src="https://media.istockphoto.com/id/1182477852/photo/breaking-news-world-news-with-map-backgorund.jpg?s=612x612&w=0&k=20&c=SQfmzF39HZJ_AqFGosVGKT9iGOdtS7ddhfj0EUl0Tkc=" alt=""></div>
-                            <div class="news__heading">News heading</div>
-                            <div class="news__description">Description Description Description Description Description Description Description Description</div>
-                            <button href="#" class="news__button">Doc them</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="news__element">
-                            <div class="news__img"><img src="https://media.istockphoto.com/id/1182477852/photo/breaking-news-world-news-with-map-backgorund.jpg?s=612x612&w=0&k=20&c=SQfmzF39HZJ_AqFGosVGKT9iGOdtS7ddhfj0EUl0Tkc=" alt=""></div>
-                            <div class="news__heading">News heading</div>
-                            <div class="news__description">Description Description Description Description Description Description Description Description</div>
-                            <button href="#" class="news__button">Doc them</button>
-                        </div>
-                    </div>
-                </div>
-    
-    
-                    <div class="swiper-pagination"></div>
-    
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                  
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                
-            </div>
-        </div> 
-        <section id="advise" class="advise">
-            <div class="advise__wrapper">
-                <div class="advise__header">
-                    LIEN HE NHAN TU VAN
-                </div>
-                <form class="advise-form" action="Post" method="post">
-
-                    <input type="text" placeholder="Name" class="advise__name">
-                    <input type="text" placeholder="Phone" class="phone">
-                    <input type="text" placeholder="" class="advise-infomation">
-                    <button class="advise__btn">Gui</button>
-                </form>
-            </div>
-        </section>
-
-
-
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="about-us">
-                            <div class="about-us__heading footer__heading">VỀ CHÚNG TÔI</div>
-                            <div class="about-us__content">
-                                Công Ty Cổ Phần Truyền Thông Fc Media chuyên cung cấp các dịch vụ quảng cáo Facebook – Google – Zalo, dịch vụ SEO, thiết kế Website,…chuyên nghiệp và uy tín tại TPHCM.
-                            </div>
-                            <ul class="tax">
-                                <li class="taxID">
-                                    <div class="taxID__name ">Tax ID name </div>
-                                    <div class="taxID__number">123456789</div>
-                                </li>
-                                <li class="representative">
-                                    <div class="representative__heading">Chuc vu:</div>
-                                    <div class="respresentative__name">ABCXYZ</div>
-                                </li>
-                            </ul>
-                            
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-2">
-                        <div class="contact-infomation">
-                            <div class="contact-infomation__heading footer__heading">
-                                THÔNG TIN LIÊN HỆ
-
-                            </div>
-                            <ul class="contact-infomation__content">
-                                <li class="contact-infomation__element">
-                                    <div class="contact-infomation__icon"><i class="fa-solid fa-envelope"></i></div>
-                                    <div class="contact-infomation__info">abcxyz@gmail.com</div>
-                                </li>
-                                <li class="contact-infomation__element">
-                                    <div class="contact-infomation__icon"><i class="fa-solid fa-phone"></i></div>
-                                    <div class="contact-infomation__info">123456789</div>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <div class="service-infomation">
-                            <div class="service-infomation__heading footer__heading">DICH VU</div>
-                            <ul class="service-infomation__list">
-                                <li class="service-information__element">Quang cao Facebook</li>
-                                <li class="service-information__element">Quang cao Zalo</li>
-                                <li class="service-information__element">Quang caos Google</li>
-                                <li class="service-information__element">Quang cao KOLs</li>
-                                <li class="service-information__element">Dich vu SEO Website</li>
-                                <li class="service-information__element">Dich vu WordPress Hosting</li>
-                                <li class="service-information__element">Thiet ke Website</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3">
-                        <div class="policies-infomation ">
-                            <div class="policies-infomation__heading footer__heading">CHINH SACH VA QUY DINH</div>
-                            <ul class="policies-infomation__list">
-                                <li class="policies-infomation__item">Chinh sach bao mat thong tin</li>
-                                <li class="policies-infomation__item">Dieu khoan su dung dich vu</li>
-                        
-                            </ul>
-                            <div class="social">
-                                <div class="social__heading footer__heading">THEO DOI TAI</div>
-                                <div class="social__list">
-                                    <div class="social__item">
-                                        <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
-                                        <a href="#twiter"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="LinkIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                                        <a href="#youtube"><i class="fa-brands fa-youtube"></i></a>
+                <div class="col col-sm-12 col-md-12 col-lg-8">
+                    <div class="members__list">
+                        <swiper-container class="mySwiper" autoplay="true" speed="1500" delay="2000">
+                            <swiper-slide>
+                                <div class="member">
+                                    <div class="container"> <img class="member__img" src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/327290447_709483530789500_4086049831564165385_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=09cbfe&amp;_nc_ohc=ywdo0sdjMtIAX-mptH5&amp;_nc_ht=scontent.fdad1-3.fna&amp;oh=00_AfBxp9x1nnqbScM8-gL6Zfj_GhKMOWGdDE4AAPh9Akl4vQ&amp;oe=64135501" alt="Member Image">
+                                        <div class="member__infomation">
+                                            <p class="member__name">Member Name</p>
+                                            <p class="member__job">Member Job</p>
+                                            <p class="member__description">Member Description Member Description Member Description Member Description Member Description Member Description</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="member">
+                                    <div class="container"> <img class="member__img" src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/327290447_709483530789500_4086049831564165385_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=09cbfe&amp;_nc_ohc=ywdo0sdjMtIAX-mptH5&amp;_nc_ht=scontent.fdad1-3.fna&amp;oh=00_AfBxp9x1nnqbScM8-gL6Zfj_GhKMOWGdDE4AAPh9Akl4vQ&amp;oe=64135501" alt="Member Image">
+                                        <div class="member__infomation">
+                                            <p class="member__name">Member Name</p>
+                                            <p class="member__job">Member Job</p>
+                                            <p class="member__description">Member Description Member Description Member Description Member Description Member Description Member Description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div class="member">
+                                    <div class="container"> <img class="member__img" src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/327290447_709483530789500_4086049831564165385_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=09cbfe&amp;_nc_ohc=ywdo0sdjMtIAX-mptH5&amp;_nc_ht=scontent.fdad1-3.fna&amp;oh=00_AfBxp9x1nnqbScM8-gL6Zfj_GhKMOWGdDE4AAPh9Akl4vQ&amp;oe=64135501" alt="Member Image">
+                                        <div class="member__infomation">
+                                            <p class="member__name">Member Name</p>
+                                            <p class="member__job">Member Job</p>
+                                            <p class="member__description">Member Description Member Description Member Description Member Description Member Description Member Description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
                     </div>
-
-                </div>
-                <div class="row">
-                    <p class="footer__text">
-
-                        Create by <a href="https://www.facebook.com/profile.php?id=100006103965827">Cap Minh Hoang</a>
-                    </p>
                 </div>
             </div>
-        </footer>
-    </div>
-    <div class="contact">
-        <div class="contact__messenger">
-            <i class="fa-brands fa-facebook-messenger"></i>
-        </div>
-        <div class="contact__call">
-            <i class="fa-solid fa-phone"></i>
         </div>
     </div>
+    <div class="contact" id="contact">
+        <div class="contact__list">
+            <div class="contact__item">
+                <div class="contact__heading">Contact Us</div>
+                <div class="contact__content">Concact Us Content Concact Us Content Concact Us Content Concact Us Content </div>
+            </div>
+            <div class="contact__item">
+                <div class="contact__heading">Head Office</div>
+                <div class="contact__content">123 ABCDEF, Ward 5, ABC Dist, Nha Trang City, Vietnam</div>
+            </div>
+            <div class="contact__item">
+                <div class="contact__phone">
+                    <div class="contact__heading">Telephone</div>
+                    <div class="contact__content">(123) 123456789</div>
+                </div>
+                <div class="contact__fax">
+                    <div class="contact__heading">Fax</div>
+                    <div class="contact__content">(123) 123456789</div>
+                </div>
+            </div>
+            <div class="contact__item">
+                <div class="contact__heading">Email</div>
+                <div class="contact__content">vu.nguyen@gmail.com</div>
+            </div>
+        </div>
+    </div><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer__heading">Company Name</div>
+                    <ul class="footer__list">
+                        <li class="footer__element">123 ABCDEF</li>
+                        <li class="footer__element">ABCDEFGHI</li>
+                        <li class="footer__element">abc@gmail.com</li>
+                        <li class="footer__element">+0123456789</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer__heading">Discover us</div>
+                    <ul class="footer__list">
+                        <li class="footer__element">Home</li>
+                        <li class="footer__element">About Us</li>
+                        <li class="footer__element">Solution</li>
+                        <li class="footer__element">Our Works</li>
+                        <li class="footer__element">Members</li>
+                        <li class="footer__element">Contact</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="footer__heading">Follow Us</div>
+                    <ul class="footer__socials">
+                        <li class="footer__social facebook-icon"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="footer__social instagram-icon"><i class="fa-brands fa-square-instagram"></i></li>
+                        <li class="footer__social linkedin-icon"><i class="fa-brands fa-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./move-top-btn.js"> </script>
     <script src="https://kit.fontawesome.com/46a14adc3a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="./imgMoveRightScroll.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./swiper.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,116 @@
+$res_phone : "only screen and (max-width: 767px)";
+$res_tablet : "only screen and (min-width:768px) and  (max-width:1199px)";
+$res_window : "only screen and (min-width: 1200px)";
+$primary-color: black;
+$heading-color:#00c9c8;
+$text-color: #bffcf9;
+$button-color: #47817f;
+@mixin responsive_window() {
+    @media #{$res_window} {
+        @content;
+    }
+}
+@mixin responsive_tablet() {
+    @media #{$res_tablet} {
+        @content;
+    }
+}
+@mixin responsive_phone() {
+    @media #{$res_phone} {
+        @content;
+    }
+}
+
+
+
+
+@include responsive_phone(){
+    .header{
+       
+        &__logo img{
+            display: none;
+        }
+    }
+}
+ 
+@include responsive_tablet(){
+    .header{
+    
+
+    }
+    .solutions{
+      margin-top: 250px;
+      .solution{
+          width: 33.3333%;
+          padding-left: 20px;
+          &__list{
+            justify-content: center;
+
+          }
+      }
+    }
+    .members{
+        height: 25vh;
+        &__title{
+            .container{
+                h3{
+                    font-size: 2rem;
+                }
+            }
+        }
+        &__list{
+            margin-left: 30px;
+            
+            flex-direction: column;
+            align-self: center;
+            .member{
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &__img{
+                    margin: 0 auto;
+
+                }
+                &__infomation{
+                    text-align: center;
+                }
+            }
+        }
+        &__title{
+            text-align: center;
+        }
+        
+        
+    }
+    .contact{
+        margin-top: 50px;
+    }
+    .footer{
+        &__socials{
+            .facebook-icon{
+                color: $text-color;
+            }
+
+            .instagram-icon{
+                // color: linear-gradient(129deg, rgba(255,0,0,1) 0%, rgba(255,148,25,1) 10%, rgba(185,255,51,1) 20%, rgba(81,255,74,1) 29%, rgba(97,255,219,1) 38%, rgba(122,167,255,1) 48%, rgba(89,75,255,1) 55%, rgba(194,43,252,1) 62%, rgba(255,18,186,1) 73%, rgba(252,86,148,1) 85%, rgba(251,24,52,1) 93%, rgba(255,0,0,1) 100%);
+                color: $text-color;
+            }
+            .linkedin-icon{
+                color: $text-color;
+            }
+        }
+    }
+}
+ 
+@include responsive_window(){
+    .header{
+        
+    }
+    .solution{
+
+        width: 20%;
+    }
+}
+ 
